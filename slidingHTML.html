@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sliding Puzzle</title>
+  <link rel="stylesheet" href="slidingCSS.css" />
+</head>
+<body class="">
+  <div class="before"></div>
+  <div class="container">
+    <div id="title" class="title">
+      <h2>secret Message</h2>
+    </div>
+    <div id="slider" class="slider">
+      <form>
+        <label>Easy</label>
+        <input type="range" id="scale" value="4" min="2" max="6" step="2">
+        <label>Hard</label>
+      </form>
+      <br>
+    </div>
+    <div id="main" class="main">
+      <canvas id="puzzle" class="canvas" width="500px" height="500px"></canvas>
+    </div>
+  </div>
+  <div class="after"></div>
+  <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Congrats you just unlock your message!!!</h2>
+        </div>
+        <div class="modal-body">
+          <p>Cheers you just solved the puzzle</p>
+          <p class="right">Chandrima Dasgupta</p>
+        </div>
+      </div>
+    
+    </div>
+  <script src="slidingJS.js"></script>
+</body>
+</html>
